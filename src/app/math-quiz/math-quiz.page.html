@@ -1,0 +1,65 @@
+<!-- mathQuiz.page.html -->
+<ion-content>
+  <!-- Question 1 -->
+  <ion-card *ngIf="currentQuestion === 1">
+    <ion-card-header>
+      Question 1:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is 2 + 2?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('3', 1)">
+          3
+        </ion-item>
+        <ion-item button (click)="checkAnswer('4', 1)">
+          4
+        </ion-item>
+        <ion-item button (click)="checkAnswer('5', 1)">
+          5
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2">
+    <ion-card-header>
+      Question 2:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is 7 x 3?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('21', 2)">
+          21
+        </ion-item>
+        <ion-item button (click)="checkAnswer('28', 2)">
+          28
+        </ion-item>
+        <ion-item button (click)="checkAnswer('34', 2)">
+          34
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3">
+    <ion-card-header>
+      Question 3:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is 88 - 43?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('35', 3)">
+          35
+        </ion-item>
+        <ion-item button (click)="checkAnswer('43', 3)">
+          43
+        </ion-item>
+        <ion-item button (click)="checkAnswer('45', 3)">
+          45
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
